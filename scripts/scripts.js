@@ -20,7 +20,8 @@ function recalculate() {
 
     if (modelName === "XYZ") {
         totalCost = duration * 100;
-    } else if (modelName === "CPRG") {
+    } 
+    else if (modelName === "CPRG") {
         totalCost = duration * 213;
     }
 
@@ -47,7 +48,8 @@ function changeModel() {
     if (modelName === "XYZ") {
         modelName = "CPRG";
         modelText.innerHTML = "Model CPRG";
-    } else {
+    } 
+    else {
         modelName = "XYZ";
         modelText.innerHTML = "Model XYZ";
     }
@@ -62,7 +64,8 @@ function changeDuration() {
         duration = parseInt(newDuration);
         durationText.innerHTML = duration;
         recalculate();
-    } else {
+    } 
+    else {
         alert("Please enter a valid number of days.");
     }
 }
@@ -124,7 +127,8 @@ function changeDuration() {
         durationText.innerHTML = duration;
 
         recalculate();
-    } else {
+    } 
+    else {
         alert("Please enter a valid number of days.");
     }
 }
